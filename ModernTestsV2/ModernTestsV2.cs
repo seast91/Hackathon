@@ -112,8 +112,8 @@ namespace ApplitoolsHackathon
 				webDriver.FindElement(By.XPath("//*[@id='SPAN__checkmark__107']")).Click();
 				webDriver.FindElement(By.Id("filterBtn")).Click();
 
-				// Check the filter page
-				eyes.Check(Target.Window().Fully().WithName("Filter Results"));
+				// Check the product grid only				
+				eyes.Check("Product Grid", Target.Region(By.Id("#product_grid")));
 
 
 
